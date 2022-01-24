@@ -8,7 +8,45 @@
   <title>To Do List</title>
 </head>
 <body>
-  <h1>Make a to-do list</h1>
+  <div class="container">
+    <h1>Make a to-do list<h1>
+    <div class="row">
+
+      <div class="col-md-6">
+        <h4>Add a thing to do</h4>
+        <form id="new-list">
+          <div class="form-group">
+            <label for="new-nameDescription">Name & Description</label>
+            <input type="text" class="form-control" id="new-nameDescription">
+          </div>
+          <div class="form-group">
+            <label for="new-time">Time</label>
+            <input type="text" class="form-control" id="new-time">
+          </div>
+          <button type="submit" class="btn-primary">Add new item</button>
+        </form>
+        <hr>
+        <h3>To-Do:</h3>
+        <ul id="lists">
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <div id="show-list">
+          <p>To-Do Item: <span class="nameDescription"></span></p>
+          <p>Time: <span class="time"></span></p>
+          <p>Item Completed: <span class="isDone"></span></p>
+          <ul id="test">
+            <li>www</li>
+          </ul>
+          <div id="button" type="button">
+          </div>
+          <div id="button2" type="button2">
+          </div>
+      </div>
+
+    </div>
+  </div>
   
   
 </body>
